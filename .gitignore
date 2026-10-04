@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets: never commit these
+app/.streamlit/secrets.toml
+.streamlit/secrets.toml
+.env
+
+# Local data (SQLite database with biometric templates)
+app/local_data/
+*.db
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# Word lock files
+~$*.docx

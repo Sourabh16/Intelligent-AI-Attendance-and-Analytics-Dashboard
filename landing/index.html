@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AttendSense · AI attendance from a photo or a voice roll-call</title>
+  <meta name="description" content="AttendSense marks classroom attendance from one photo or one voice recording, then shows teachers and students exactly where everyone stands against the attendance target.">
+  <meta property="og:title" content="AttendSense · AI attendance">
+  <meta property="og:description" content="Attendance in seconds, not minutes. Face and voice recognition with a teacher review step and an analytics dashboard.">
+  <meta name="theme-color" content="#0F766E">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="AttendSense home">
+        <span class="logo">AS</span><span>AttendSense</span>
+      </a>
+      <nav class="links" aria-label="Sections">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+      <a class="btn btn-small" data-app-link href="#">Open the app</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Face &amp; voice recognition · Analytics dashboard</p>
+          <h1>Attendance in seconds,<br>not minutes.</h1>
+          <p class="lead">Take one photo of the class, or record a quick roll-call. AttendSense recognises every
+            enrolled student, lets you fix anything before saving, and tells each student exactly how many classes
+            they need to stay above 75%.</p>
+          <div class="cta-row">
+            <a class="btn" data-app-link href="#">Try AttendSense</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <ul class="proof">
+            <li><strong>1 photo</strong><span>for a whole classroom</span></li>
+            <li><strong>0 photos stored</strong><span>only numeric templates</span></li>
+            <li><strong>1 click</strong><span>to export to Excel</span></li>
+          </ul>
+        </div>
+
+        <figure class="mock" aria-label="Illustration: a classroom photo with recognised faces outlined">
+          <svg viewBox="0 0 520 360" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#E6F4F1"/><stop offset="1" stop-color="#CFE7E3"/>
+              </linearGradient>
+            </defs>
+            <rect width="520" height="360" rx="18" fill="url(#room)"/>
+            <rect x="30" y="24" width="460" height="70" rx="8" fill="#0F172A" opacity=".85"/>
+            <text x="50" y="66" fill="#CBD5E1" font-size="18" font-family="ui-monospace,monospace">CS201 · Data Structures</text>
+            <g class="desks" fill="#B7D9D3">
+              <rect x="20" y="300" width="480" height="40" rx="6"/>
+              <rect x="40" y="210" width="440" height="26" rx="6"/>
+            </g>
+            <g class="people">
+              <g transform="translate(80 150)"><circle r="26" fill="#F3C7A6"/><rect x="-30" y="28" width="60" height="40" rx="14" fill="#6366F1"/></g>
+              <g transform="translate(190 140)"><circle r="26" fill="#C68B67"/><rect x="-30" y="28" width="60" height="40" rx="14" fill="#14B8A6"/></g>
+              <g transform="translate(300 150)"><circle r="26" fill="#E8B48F"/><rect x="-30" y="28" width="60" height="40" rx="14" fill="#F59E0B"/></g>
+              <g transform="translate(410 142)"><circle r="26" fill="#8D5A3E"/><rect x="-30" y="28" width="60" height="40" rx="14" fill="#EC4899"/></g>
+              <g transform="translate(135 255)"><circle r="24" fill="#D9A07A"/></g>
+              <g transform="translate(250 258)"><circle r="24" fill="#F1C9A8"/></g>
+              <g transform="translate(365 255)"><circle r="24" fill="#A86B4A"/></g>
+            </g>
+            <g class="boxes" fill="none" stroke-width="3">
+              <rect class="b ok" x="50" y="120" width="60" height="60" rx="4"/>
+              <rect class="b ok" x="160" y="110" width="60" height="60" rx="4"/>
+              <rect class="b warn" x="270" y="120" width="60" height="60" rx="4"/>
+              <rect class="b ok" x="380" y="112" width="60" height="60" rx="4"/>
+              <rect class="b ok" x="107" y="227" width="56" height="56" rx="4"/>
+              <rect class="b ok" x="222" y="230" width="56" height="56" rx="4"/>
+              <rect class="b bad" x="337" y="227" width="56" height="56" rx="4"/>
+            </g>
+            <g class="tags" font-size="12" font-weight="700" font-family="Plus Jakarta Sans, sans-serif" fill="#fff">
+              <rect x="50" y="102" width="52" height="18" fill="#16A34A"/><text x="55" y="115">Aarav</text>
+              <rect x="160" y="92" width="44" height="18" fill="#16A34A"/><text x="165" y="105">Diya</text>
+              <rect x="270" y="102" width="56" height="18" fill="#D97706"/><text x="275" y="115">Kabir ?</text>
+              <rect x="380" y="94" width="56" height="18" fill="#16A34A"/><text x="385" y="107">Meera</text>
+              <rect x="107" y="209" width="50" height="18" fill="#16A34A"/><text x="112" y="222">Rohan</text>
+              <rect x="222" y="212" width="40" height="18" fill="#16A34A"/><text x="227" y="225">Sara</text>
+              <rect x="337" y="209" width="64" height="18" fill="#DC2626"/><text x="342" y="222">Unknown</text>
+            </g>
+          </svg>
+          <figcaption>
+            <span class="dot ok"></span>recognised <span class="dot warn"></span>needs review <span class="dot bad"></span>not enrolled
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <p class="sub">The idea is simple. The details make it trustworthy.</p>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <h3>Students enroll once</h3>
+            <p>Three quick selfies (front, left, right) and an optional 5-second voice sample. Each becomes a list of
+              numbers, a <em>template</em>. The photos themselves are thrown away.</p>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <h3>They join with a QR</h3>
+            <p>The teacher shares a QR code or a 6-character join code. Codes can be paused or regenerated at any time.</p>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <h3>Snap or record the class</h3>
+            <p>Upload 1–3 classroom photos, or record students saying “present”. Every face or voice is compared
+              only with students enrolled in <em>that</em> subject.</p>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <h3>Review, then save</h3>
+            <p>You see the photo with names drawn on it and an editable list. Tick anyone the AI missed, then save the
+              whole class in one atomic step.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="features" class="section alt">
+      <div class="wrap">
+        <h2>Built to be right, not just fast</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>One face, one student</h3>
+            <p>Faces are assigned to students most-confident-first, so two faces can never both claim the same
+              student, and a look-alike pair is flagged for review rather than guessed.</p>
+          </article>
+          <article class="card">
+            <h3>Liveness at login</h3>
+            <p>Students sign in with their roll number, then a front photo and a head-turned photo. Both must match
+              that student. A printed picture can't turn its head.</p>
+          </article>
+          <article class="card">
+            <h3>Voice roll-call</h3>
+            <p>One recording is split at the pauses. Each “present” is matched to a voice profile with a
+              similarity score you can see.</p>
+          </article>
+          <article class="card">
+            <h3>Teacher stays in charge</h3>
+            <p>Adjustable strictness, a review table before saving, and corrections to any past class, each one
+              marked as a manual edit.</p>
+          </article>
+          <article class="card">
+            <h3>No duplicate identities</h3>
+            <p>A new registration is checked against every existing face, so one person can't hold two roll numbers.</p>
+          </article>
+          <article class="card">
+            <h3>Locked-down data</h3>
+            <p>Row-level security on every table, passwords hashed with bcrypt, and the database key kept on the
+              server, never sent to a browser.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="analytics" class="section">
+      <div class="wrap two">
+        <div>
+          <h2>An analytics dashboard, not just a register</h2>
+          <ul class="ticks">
+            <li>Attendance per class with a 5-class trend and the target line</li>
+            <li>Who attended which class, as a heatmap</li>
+            <li>Weekday patterns: find the Friday dip</li>
+            <li>Defaulter list below the target, one click to CSV</li>
+            <li>Excel workbook: overview, students, classes, raw log</li>
+            <li>For students: “attend the next 4 classes to reach 75%” or “you can miss 2”</li>
+          </ul>
+        </div>
+        <div class="calc card" aria-labelledby="calc-title">
+          <h3 id="calc-title">Try the 75% calculator</h3>
+          <div class="calc-row">
+            <label>Attended <input id="att" type="number" min="0" value="14"></label>
+            <label>Held <input id="tot" type="number" min="0" value="20"></label>
+            <label>Target % <input id="tgt" type="number" min="1" max="100" value="75"></label>
+          </div>
+          <div class="meter" aria-hidden="true"><span id="meter-fill"></span><i id="meter-target"></i></div>
+          <p id="calc-out" class="calc-out" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section alt">
+      <div class="wrap two">
+        <div>
+          <h2>Privacy by design</h2>
+          <p class="sub">Biometric data deserves care. AttendSense is built around India's DPDP Act principles:
+            consent, purpose limitation and the right to erasure.</p>
+        </div>
+        <ul class="ticks">
+          <li>Explicit consent checkbox at registration</li>
+          <li>Classroom photos and audio are processed in memory, never stored</li>
+          <li>Only templates are kept: 128 numbers per face, 256 per voice</li>
+          <li>Students can replace or remove their voice and face profiles</li>
+          <li>“Delete my account” erases templates, enrollments and all records</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Under the hood</h2>
+        <div class="stack">
+          <span>Python 3.11</span><span>Streamlit</span><span>dlib ResNet face embeddings</span>
+          <span>Resemblyzer speaker embeddings</span><span>librosa</span><span>Supabase Postgres</span>
+          <span>Row-level security</span><span>pandas</span><span>Altair</span><span>pytest + GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Take tomorrow's attendance in ten seconds.</h2>
+        <a class="btn btn-light" data-app-link href="#">Open AttendSense</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span>© <span id="year"></span> AttendSense</span>
+      <a href="https://github.com/Sourabh16/Intelligent-AI-Attendance-and-Analytics-Dashboard">Source on GitHub</a>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
